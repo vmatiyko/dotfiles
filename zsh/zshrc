@@ -1,0 +1,54 @@
+# Colors
+autoload -U colors
+colors
+setopt prompt_subst
+
+local smiley="%(?,%{$fg[green]%}☺%{$reset_color%},%{$fg[red]%}☹%{$reset_color%})"
+
+PROMPT='
+%~
+${smiley}  %{$reset_color%}'
+
+RPROMPT='%{$fg[white]%} $(~/.bin/git-cwd-info)%{$reset_color%}'
+
+setopt menucomplete
+autoload compinit
+compinit
+export EDITOR="vim"
+
+# Aliases
+
+alias r="bundle exec rails"
+alias z="zeus"
+alias g="git"
+alias rk="bundle exec rake"
+
+alias ccat="pygmentize -g"
+alias ls="ls -G"
+alias l="ls -laG"
+alias ru="rvm use"
+alias vimrc="vim $HOME/.vimrc"
+alias zshrc="vim $HOME/.zshrc"
+alias szs="source $HOME/.zshrc"
+
+alias ssup="sis server start -d -P"
+alias ssdown="sis server stop -d"
+
+alias gco="git checkout"
+alias gst="git status"
+alias gcm="git commit -am"
+alias gpl="git pull"
+alias gps="git push"
+
+alias cap="bundle exec cap"
+
+[[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
+export NLS_KEY_PWD=test
+
+stty -ixon -ixoff
+
+# rbenv
+export RBENV_ROOT="$(brew --prefix rbenv)"
+export GEM_HOME="$(brew --prefix)/opt/gems"
+export GEM_PATH="$(brew --prefix)/opt/gems"
+export PATH=$RBENV_ROOT/bin:$RBENV_ROOT/shims:/usr/local/bin:$PATH
