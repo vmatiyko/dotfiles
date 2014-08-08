@@ -1,5 +1,6 @@
 alias tmux="tmux -2"
 alias ins="sudo apt-get install"
+alias vim='vim -u ~/.vim/vimrc'
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 

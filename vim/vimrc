@@ -10,8 +10,7 @@ set t_Co=256 "256 colors
 
 
 set term=screen-256color
-colorscheme hybrid 
-
+colorscheme vividchalk 
 let g:solarized_termcolors=256
 highlight SignColumn ctermbg=0
 set colorcolumn=80
