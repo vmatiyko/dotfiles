@@ -5,11 +5,14 @@ set nocompatible
 set noswapfile
 
 syntax enable
-set background=light
-set t_Co=256 "256 colors
-colorscheme hybrid
 
-let g:solarized_termcolors=16
+set t_Co=256 "256 colors
+
+
+set term=screen-256color
+colorscheme hybrid 
+
+let g:solarized_termcolors=256
 highlight SignColumn ctermbg=0
 set colorcolumn=80
 
