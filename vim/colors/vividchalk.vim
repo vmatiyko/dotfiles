@@ -1,4 +1,4 @@
-olor scheme
+color scheme
 " Name:         vividchalk.vim
 " Author:       Tim Pope <vimNOSPAM@tpope.info>
 " GetLatestVimScripts: 1891 1 :AutoInstall: vividchalk.vim
