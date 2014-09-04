@@ -8,6 +8,8 @@ syntax enable
 
 set t_Co=256 "256 colors
 
+let g:rubycomplete_buffer_loading = 1
+let g:rubycomplete_rails = 1
 let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
 let g:airline#extensions#tabline#enabled = 1
